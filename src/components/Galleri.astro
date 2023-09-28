@@ -1,0 +1,96 @@
+---
+import { Image } from "astro:assets";
+import pic1 from "../assets/images/prak1.webp";
+import pic2 from "../assets/images/prak2.webp";
+import pic3 from "../assets/images/prak3.webp";
+import pic4 from "../assets/images/prak4.webp";
+---
+
+<section class="udvalgtebilleder grid-1-1">
+  <div class="galleri">
+    <div>
+      <h2>Rejsen som Webdesigner</h2>
+    </div>
+    <div>
+      <p>
+        Multimediedesign-studerende med en passion for minimalistisk æstetik og
+        dyb fordybelse i designens mange facetter. Jeg trives i at skabe
+        enkelhed og funktionel elegance i mine visuelle løsninger. Jeg søger
+        altid nye måder at udfordre konventionelle designnormer for at skabe
+        meningsfulde designs, der forbedrer brugeroplevelsen og forbinder
+        teknologi med æstetik.
+      </p>
+    </div>
+    <div>
+      <Image class="pic1" src={pic1} alt="pic1" />
+      <Image class="pic2" src={pic2} alt="pic2" />
+      <Image class="pic3" src={pic3} alt="pic3" />
+      <Image class="pic4" src={pic4} alt="pic4" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .udvalgtebilleder {
+    container-type: inline-size;
+  }
+
+  @container (width > 100em) {
+    .galleri {
+      column-count: 3;
+    }
+  }
+  @container (width > 100em) {
+    .galleri {
+      column-count: 3;
+    }
+  }
+  /*
+    .galleri img {
+      margin-bottom: var(--size-3);
+    }*/
+
+  .pic1 {
+    width: 100%;
+    height: 100%;
+    margin-left: 200%;
+  }
+
+  .pic2 {
+    width: 100%;
+    height: 100%;
+    margin-left: 200%;
+    margin-top: -2%;
+  }
+
+  .pic3 {
+    width: 100%;
+    height: 100%;
+    margin-left: 194%;
+  }
+  .pic4 {
+    width: 100%;
+    height: 100%;
+    margin-left: 194%;
+    margin-top: -2%;
+  }
+  p {
+    width: 167%;
+    margin-left: 80%;
+    line-height: 150%;
+  }
+  h2 {
+    margin-left: 80%;
+    width: 150%;
+    margin-top: 80%;
+  }
+</style>

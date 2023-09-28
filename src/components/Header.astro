@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+import forside from "../assets/images/header.webp";
+---
+
+<div class="billede-container billede1">
+  <Image class="forside1" src={forside} alt="forsidebillede" />
+  <h1>Multimediedesigner</h1>
+</div>
+<section>
+  <div class="text-container3"></div>
+
+  <div>
+    <div>
+      <h2>JOSEPHINE OLESEN</h2>
+    </div>
+    <div>
+      <p>Webdesigner - Webudvikler</p>
+    </div>
+  </div>
+</section>
+<style>
+  .forside1 {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+
+    top: 0;
+    left: 0;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .text-container {
+    width: 500px;
+    margin-left: 20%;
+    line-height: 1.7rem;
+    margin-top: -15%;
+  }
+  .text-container1 {
+    width: 500px;
+    line-height: 1.7rem;
+  }
+  h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: var(--size-5);
+    color: black;
+    text-align: center;
+    margin-top: -15%;
+  }
+  h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: var(--size-5);
+    color: black;
+    text-align: center;
+  }
+  p {
+    font-family: "Quicksand", sans-serif;
+    font-size: var(--size-5);
+    color: black;
+    text-align: center;
+  }
+</style>
