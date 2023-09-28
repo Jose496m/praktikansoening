@@ -1,15 +1,39 @@
 ---
+import Galleri from "../components/Galleri.astro";
+import Header from "../components/Header.astro";
+import Hvemerjeg from "../components/Hvemerjeg.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Erfarring from "../components/Erfarring.astro";
+import Kompetancer from "../components/Kompetancer.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1>Astro</h1>
+  </body>
 </html>
+
+<BaseLayout />
+<main>
+  <Header />
+  <Galleri />
+  <Hvemerjeg />
+  <Erfarring />
+  <Kompetancer />
+</main>
+
+<style>
+  main {
+    margin: 0;
+    padding: 0;
+
+    background-color: #f7f7f7;
+  }
+</style>
