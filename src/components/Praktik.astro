@@ -23,40 +23,69 @@ import praktik from "../assets/images/praktikside.webp";
 </section>
 
 <style>
-  .streg {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    max-width: 600px;
-    padding: var(--size-6);
-    border: 30px solid transparent;
-    border-image: url(../assets/images/borderLine.png) 5% stretch;
-    margin-left: 30%;
+  @media (min-width: 800px) {
+    .streg {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      max-width: 600px;
+      padding: var(--size-6);
+      border: 30px solid transparent;
+      border-image: url(../assets/images/borderLine.png) 5% stretch;
+      margin-left: 30%;
+    }
+
+    section {
+      text-align: center;
+      padding: 3%;
+
+      background-image: url(../assets/images/leaf.webp);
+      background-size: 70%;
+    }
+
+    .pic1 {
+      width: 60%;
+      height: 60%;
+      margin-top: 10%;
+      margin-left: 20%;
+    }
+
+    p {
+      line-height: 150%;
+      text-align: left;
+      width: 100%;
+      margin-top: 3%;
+    }
+
+    h2 {
+      margin-top: 5%;
+    }
   }
 
-  section {
-    text-align: center;
-    padding: 3%;
+  @media (max-width: 780px) {
+    .streg {
+      display: flex;
+      flex-direction: column;
+      width: 457px;
+      max-width: 600px;
+      padding: var(--size-6);
+      border: 30px solid transparent;
+      border-image: url(../assets/images/borderLine.png) 5% stretch;
+      margin-left: 30%;
+    }
 
-    background-image: url(../assets/images/leaf.webp);
-    background-size: 70%;
-  }
+    section {
+      background-image: url(../assets/images/leaf4.webp);
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: 180px;
+      margin-top: 20%;
+    }
 
-  .pic1 {
-    width: 60%;
-    height: 60%;
-    margin-top: 10%;
-    margin-left: 20%;
-  }
-
-  p {
-    line-height: 150%;
-    text-align: left;
-    width: 100%;
-    margin-top: 3%;
-  }
-
-  h2 {
-    margin-top: 5%;
+    p {
+      text-align: left;
+      width: 363px;
+      margin-top: 3%;
+    }
   }
 </style>

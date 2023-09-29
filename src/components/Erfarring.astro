@@ -5,18 +5,12 @@
     </div>
     <div>
       <h3>2022 -</h3>
-    </div>
-    <div>
       <p>Multimedie design - København erhvervs akadami - KEA</p>
       <li>Viden for HTML, CSS, Javascript samt Astro</li>
       <li>Visual Studie Code</li>
       <li>Forståelse for Figma samt XD</li>
       <li>Forståelse for Foto og video redigering</li>
-    </div>
-    <div>
       <h3>2018-2020</h3>
-    </div>
-    <div>
       <p>Sales Trainee - Samsøe Samsøe, København</p>
       <li>
         Salgsassistent i Samsøe Samsøe butik i Pilestræde, København (Fuldtid)
@@ -28,12 +22,8 @@
       <li>
         Sideløbende skoleophold ved Skåde Handelsfagskole som Sales Trainee
       </li>
-    </div>
 
-    <div>
       <h3>2018</h3>
-    </div>
-    <div>
       <p>Udenlandsk højskoleophold med Dansk Studie Center</p>
       <li>
         4 måneders jordomrejse til bl.a. Vietnam, New Zealand & Costa Rica.
@@ -42,12 +32,7 @@
       <li>
         Deltagelse i Kursus Kommunikation & personlig udvikling i Costa Rica.
       </li>
-    </div>
-
-    <div>
       <h3>2014-2017</h3>
-    </div>
-    <div>
       <p>STX ced Oure Kostgymnasium & Lyngby Gymnasium</p>
       <li>Musik- og performancelinje på Oure Kostgymnasium (2014-2015)</li>
       <li>Sproglig linje på Lyngby Gymnasium (2015-2017)</li>
@@ -58,20 +43,16 @@
     <div>
       <h2>Erhvervserfaring</h2>
     </div>
+
     <div>
       <h3>2020-2023</h3>
-    </div>
-    <div>
       <p>Kunde konsulent Fitness World</p>
       <li>Kunde konsulent ved Fitness world</li>
       <li>Ansvarlig for sociale medier - Trustpilot & Falcon</li>
       <li>Besvarelse af medlemshenvendelser, i Dixa og ServiceNow</li>
       <li>Kundebesvarelse via livechat, Mail & telefon</li>
-    </div>
-    <div>
+
       <h3>2018-2020</h3>
-    </div>
-    <div>
       <p>Sales Trainee - Samsøe Samsøe, København</p>
       <li>
         Salgsassistent i Samsøe Samsøe butik i Pilestræde, København (Fuldtid)
@@ -83,11 +64,8 @@
       <li>
         Sideløbende skoleophold ved Skåde Handelsfagskole som Sales Trainee
       </li>
-    </div>
-    <div>
+
       <h3>2017-2018</h3>
-    </div>
-    <div>
       <p>Salgsassistent i Deres, Lyngby</p>
       <li>
         Salgsassistent på deltid i tøjforretningen Deres i Lyngby storcenter
@@ -97,17 +75,27 @@
 </article>
 
 <style>
-  article {
-    margin-top: 5%;
+  @media (min-width: 800px) {
+    article {
+      margin-top: 5%;
+    }
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .sec1 {
+      margin-left: 40%;
+    }
+    .sec2 {
+      margin-left: 20%;
+    }
   }
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .sec1 {
-    margin-left: 40%;
-  }
-  .sec2 {
-    margin-left: 20%;
+
+  @media (max-width: 780px) {
+    /* Skjul ul-elementer som standard */
+    .sec1,
+    .sec2 {
+      display: none;
+    }
   }
 </style>

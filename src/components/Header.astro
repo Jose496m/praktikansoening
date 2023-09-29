@@ -20,48 +20,77 @@ import forside from "../assets/images/header.webp";
   </div>
 </section>
 <style>
-  .forside1 {
-    width: 100vw;
-    height: 80vh;
-    object-fit: cover;
+  @media (min-width: 800px) {
+    .forside1 {
+      width: 100vw;
+      height: 80vh;
+      object-fit: cover;
 
-    top: 0;
-    left: 0;
+      top: 0;
+      left: 0;
+    }
+
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    .text-container {
+      width: 500px;
+      margin-left: 20%;
+      line-height: 1.7rem;
+      margin-top: -15%;
+    }
+    .text-container1 {
+      width: 500px;
+      line-height: 1.7rem;
+    }
+    h1 {
+      font-family: "Quicksand", sans-serif;
+      font-size: var(--size-5);
+      color: black;
+      text-align: center;
+      margin-top: -15%;
+    }
+    h2 {
+      font-family: "Quicksand", sans-serif;
+      font-size: var(--size-5);
+      color: black;
+      text-align: center;
+    }
+    p {
+      font-family: "Quicksand", sans-serif;
+      font-size: var(--size-5);
+      color: black;
+      text-align: center;
+    }
   }
 
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-  }
+  @media (max-width: 780px) {
+    .forside1 {
+      max-width: 157%;
+      height: 50vh;
+      object-fit: cover;
+    }
 
-  .text-container {
-    width: 500px;
-    margin-left: 20%;
-    line-height: 1.7rem;
-    margin-top: -15%;
-  }
-  .text-container1 {
-    width: 500px;
-    line-height: 1.7rem;
-  }
-  h1 {
-    font-family: "Quicksand", sans-serif;
-    font-size: var(--size-5);
-    color: black;
-    text-align: center;
-    margin-top: -15%;
-  }
-  h2 {
-    font-family: "Quicksand", sans-serif;
-    font-size: var(--size-5);
-    color: black;
-    text-align: center;
-  }
-  p {
-    font-family: "Quicksand", sans-serif;
-    font-size: var(--size-5);
-    color: black;
-    text-align: center;
+    h1 {
+      font-size: var(--size-4);
+      margin-top: -40%;
+      margin-left: 60%;
+    }
+    h2 {
+      margin-left: 70%;
+      font-size: 70%;
+    }
+    p {
+      margin-left: 70%;
+      font-size: 50%;
+    }
+
+    .text-container {
+      width: 80%; /* Adjust as needed */
+      margin-left: 60%;
+    }
   }
 </style>
