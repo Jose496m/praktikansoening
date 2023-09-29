@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import praktik from "../assets/images/logo.svg";
+---
+
+<section class="grid_1-1-1">
+  <div>
+    <Image class="logo" src={praktik} alt="logo" />
+  </div>
+  <div>
+    <h2>Mine Mål og Forventninger til Praktikforløbet</h2>
+    <p>
+      Som multimediedesigner med en passion for webdesign og frontend-udvikling,
+      søger jeg en spændende mulighed for at dygtiggøre mig inden for
+      brugergrænsefladedesign og skabelse af innovative digitale løsninger. I
+      løbet af min praktik forventer jeg at opbygge værdifuld praktisk erfaring
+      inden for brugervenligt webdesign, udforske de nyeste tendenser inden for
+      webudvikling og kontinuerligt udvikle mine kompetencer. Jeg glæder mig til
+      at kaste mig ind i webdesignerens hverdag, hvor jeg kan finde inspiration
+      i samarbejdet med virksomheden og deres dygtige team. Mit ultimative mål
+      er at blive en dygtig og værdifuld ressource inden for webdesign, og jeg
+      er fast besluttet på at bidrage positivt til enhver udfordring, der måtte
+      komme min vej
+    </p>
+  </div>
+  <div>
+    <Image class="logo" src={praktik} alt="logo" />
+  </div>
+</section>
+
+<style>
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  section {
+    background-color: #c5dac4;
+    text-align: center;
+    padding: 3%;
+  }
+
+  p {
+    margin-top: 1%;
+    line-height: 150%;
+    text-align: left;
+    margin-left: 30%;
+  }
+</style>
