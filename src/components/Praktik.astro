@@ -1,13 +1,10 @@
 ---
 import { Image } from "astro:assets";
-import praktik from "../assets/images/logo.svg";
+import praktik from "../assets/images/praktikside.webp";
 ---
 
-<section class="grid_1-1-1">
-  <div>
-    <Image class="logo" src={praktik} alt="logo" />
-  </div>
-  <div>
+<section class="grid_1-1">
+  <div class="streg">
     <h2>Mine Mål og Forventninger til Praktikforløbet</h2>
     <p>
       Som multimediedesigner med en passion for webdesign og frontend-udvikling,
@@ -23,26 +20,43 @@ import praktik from "../assets/images/logo.svg";
       komme min vej
     </p>
   </div>
-  <div>
-    <Image class="logo" src={praktik} alt="logo" />
-  </div>
 </section>
 
 <style>
-  .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .streg {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 600px;
+    padding: var(--size-6);
+    border: 30px solid transparent;
+    border-image: url(../assets/images/borderLine.png) 5% stretch;
+    margin-left: 30%;
   }
+
   section {
-    background-color: #c5dac4;
     text-align: center;
     padding: 3%;
+
+    background-image: url(../assets/images/leaf.webp);
+    background-size: 70%;
+  }
+
+  .pic1 {
+    width: 60%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 20%;
   }
 
   p {
-    margin-top: 1%;
     line-height: 150%;
     text-align: left;
-    margin-left: 30%;
+    width: 100%;
+    margin-top: 3%;
+  }
+
+  h2 {
+    margin-top: 5%;
   }
 </style>
