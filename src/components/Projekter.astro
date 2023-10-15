@@ -1,0 +1,115 @@
+---
+import { Image } from "astro:assets";
+import sund from "../assets/images/sundmedsigne.webp";
+import match from "../assets/images/matchwinner.webp";
+---
+
+<h2>Tidligere Projekter</h2>
+<section class="grid_1-1">
+  <div>
+    <h3>Matchwinner</h3>
+    <p>
+      MatchWinner er et firma, der specialiserer sig i Mystery boxes med
+      fodboldtrøjer. Vi har haft fornøjelsen af at arbejde med dem som en del af
+      vores eksamensopgave. Vores opgave bestod i at udvikle en hjemmeside for
+      dem. Desværre er hjemmesiden i øjeblikket midlertidigt på pause, da den
+      hostes gennem Supabase. Hvis du gerne vil se koden til hjemmesiden, kan du
+      finde den på min GitHub-repository: <a
+        href="https://github.com/Jose496m/matchwinner"
+        >Matchwinner github repository</a
+      >
+
+      Alternativt kan jeg også sende et link til en aktiv hjemmeside.
+    </p>
+    <Image class="match" src={match} alt="match" />
+  </div>
+  <div>
+    <h3>Sund med Signe</h3>
+    <p>
+      "Sund Med Signe" var vores seneste projekt på første semester. Her
+      arbejdede vi på at redesigne en hjemmeside for en selvstændig personlig
+      træner. Du kan finde koden til projektet på min GitHub-repository: <a
+        href="https://github.com/Jose496m/Sundmedsigne"
+        >Sund med Signe repository</a
+      >. Hvis du ønsker at se resultatet af vores arbejde, kan du besøge
+      hjemmesiden direkte på følgende link: <a
+        href="https://sundmedsigne.netlify.app/">Færdigt projekt</a
+      >
+    </p>
+    <Image class="sund" src={sund} alt="sund" />
+  </div>
+</section>
+
+<style>
+  @media (min-width: 800px) {
+    .grid_1-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    h3 {
+      margin-bottom: 5%;
+      margin-left: 40%;
+    }
+    p {
+      width: 60%;
+      margin-left: 20%;
+      line-height: 1.8rem;
+    }
+    .match {
+      width: 50%;
+      height: 40%;
+      margin-left: 20%;
+      margin-top: 5%;
+    }
+    .sund {
+      width: 50%;
+      height: 40%;
+      margin-left: 20%;
+      margin-top: 11%;
+    }
+    a {
+      text-decoration: none; /* Fjern understregningen */
+      color: #333; /* Ændre linkfarven til sort (#333) */
+      font-weight: bold; /* Gør linkets tekst tykkere */
+    }
+  }
+  @media (max-width: 600px) {
+    h2 {
+      margin-left: 50%;
+      margin-top: 15%;
+      margin-bottom: 10%;
+    }
+    h3 {
+      margin-bottom: 10%;
+      margin-left: 60%;
+      margin-top: 10%;
+    }
+    p {
+      margin-left: 40%;
+      width: 385px;
+    }
+    .match {
+      width: 100%;
+      height: 100%;
+      margin-left: 30%;
+      margin-top: 5%;
+    }
+    .sund {
+      width: 100%;
+      height: 100%;
+      margin-left: 30%;
+      margin-top: 5%;
+    }
+
+    a {
+      text-decoration: none; /* Fjern understregningen */
+      color: #333; /* Ændre linkfarven til sort (#333) */
+      font-weight: bold; /* Gør linkets tekst tykkere */
+    }
+  }
+</style>
