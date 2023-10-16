@@ -23,6 +23,14 @@ import praktik from "../assets/images/praktikside.webp";
 </section>
 
 <style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
   @media (min-width: 800px) {
     .streg {
       display: flex;
@@ -38,9 +46,9 @@ import praktik from "../assets/images/praktikside.webp";
     section {
       text-align: center;
       padding: 3%;
-
+      background-repeat: no-repeat;
       background-image: url(../assets/images/leaf.webp);
-      background-size: 80%;
+      background-size: 42%;
     }
 
     .pic1 {
@@ -51,14 +59,20 @@ import praktik from "../assets/images/praktikside.webp";
     }
 
     p {
-      line-height: 150%;
+      line-height: 1.8rem;
       text-align: left;
       width: 100%;
       margin-top: 3%;
+      font-family: Montserrat;
+      color: black;
     }
 
     h2 {
       margin-top: 5%;
+      font-family: Inter;
+      font-size: 110%;
+      color: black;
+      font-weight: bolder;
     }
   }
 
@@ -86,6 +100,16 @@ import praktik from "../assets/images/praktikside.webp";
       text-align: left;
       width: 363px;
       margin-top: 3%;
+      font-family: Montserrat;
+      color: black;
+      line-height: 1.7rem;
+      font-size: 75%;
+    }
+    h2 {
+      font-family: Inter;
+      font-size: 99%;
+      color: black;
+      font-weight: bolder;
     }
   }
 </style>

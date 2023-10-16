@@ -5,7 +5,7 @@ import forside from "../assets/images/header.webp";
 
 <div class="billede-container billede1">
   <Image class="forside1" src={forside} alt="forsidebillede" />
-  <h1>Multimediedesigner</h1>
+  <h1>MULTIMEDIEDESIGNER</h1>
 </div>
 <section>
   <div class="text-container3"></div>
@@ -15,11 +15,19 @@ import forside from "../assets/images/header.webp";
       <h2>JOSEPHINE OLESEN</h2>
     </div>
     <div>
-      <p>Webdesigner - Webudvikler</p>
+      <p>WEBDESIGNER - WEBUDVIKLER</p>
     </div>
   </div>
 </section>
 <style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
   @media (min-width: 800px) {
     .forside1 {
       width: 100vw;
@@ -47,23 +55,26 @@ import forside from "../assets/images/header.webp";
       line-height: 1.7rem;
     }
     h1 {
-      font-family: "Quicksand", sans-serif;
+      font-family: Inter;
       font-size: var(--size-5);
       color: black;
       text-align: center;
       margin-top: -15%;
+      margin-bottom: 1%;
     }
     h2 {
-      font-family: "Quicksand", sans-serif;
+      font-family: Inter;
       font-size: var(--size-5);
       color: black;
       text-align: center;
+      margin-bottom: 1%;
     }
     p {
-      font-family: "Quicksand", sans-serif;
+      font-family: Montserrat;
       font-size: var(--size-5);
       color: black;
       text-align: center;
+      margin-bottom: 1%;
     }
   }
 
@@ -78,14 +89,21 @@ import forside from "../assets/images/header.webp";
       font-size: var(--size-4);
       margin-top: -40%;
       margin-left: 60%;
+      font-family: Inter;
+      margin-bottom: 1%;
     }
     h2 {
       margin-left: 70%;
       font-size: 70%;
+      font-family: Inter;
+      margin-bottom: 1%;
     }
     p {
       margin-left: 70%;
       font-size: 50%;
+      font-family: Montserrat;
+      color: black;
+      margin-bottom: 1%;
     }
 
     .text-container {

@@ -1,0 +1,75 @@
+---
+import { Image } from "astro:assets";
+import linkedin from "../assets/images/linkedin.svg";
+import facebook from "../assets/images/facebook.svg";
+---
+
+<article>
+  <section>
+    <h2>Kontakt</h2>
+    <div>
+      <a href="https://www.linkedin.com/in/josephine-olesen-063a711a8/">
+        <Image class="linkedin" src={linkedin} alt="linked" />
+      </a>
+      <a href="https://www.facebook.com/josephine.olesen.98/">
+        <Image class="facebook" src={facebook} alt="face" />
+      </a>
+    </div>
+    <div>
+      <p>Telefon: +45 31 20 40 70</p>
+    </div>
+    <div>
+      <p>E-mail: Josephine.olesen@hotmail.com</p>
+    </div>
+  </section>
+</article>
+
+<style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  @media (min-width: 800px) {
+    section {
+      background-image: url(../assets/images/leaf.webp);
+      background-size: 55%;
+      margin-top: 10%;
+      text-align: center;
+      background-position: left bottom;
+      background-repeat: no-repeat;
+    }
+    h2 {
+      font-family: Inter;
+      color: black;
+    }
+    p {
+      font-family: Montserrat;
+      color: black;
+    }
+  }
+
+  @media (max-width: 600px) {
+    section {
+      background-image: url(../assets/images/leaf.webp);
+      background-size: 55%;
+      margin-top: 10%;
+      text-align: center;
+      background-position: left bottom;
+      background-repeat: no-repeat;
+    }
+    h2 {
+      margin-left: 50%;
+    }
+
+    .linkedin {
+      margin-left: 45%;
+    }
+    p {
+      margin-left: 45%;
+    }
+  }
+</style>

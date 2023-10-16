@@ -32,6 +32,14 @@ import pic4 from "../assets/images/prak4.webp";
 </section>
 
 <style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
   @media (min-width: 800px) {
     .grid-1-1 {
       display: grid;
@@ -56,10 +64,6 @@ import pic4 from "../assets/images/prak4.webp";
         column-count: 3;
       }
     }
-    /*
-    .galleri img {
-      margin-bottom: var(--size-3);
-    }*/
 
     .pic1 {
       width: 350px;
@@ -84,14 +88,22 @@ import pic4 from "../assets/images/prak4.webp";
       margin-top: -2%;
     }
     p {
-      width: 66%;
-      margin-left: 3%;
-      line-height: 150%;
+      width: 60%;
+
+      font-family: Montserrat;
+      color: black;
+      line-height: 2rem;
+      margin-left: 20%;
     }
     h2 {
       margin-left: 3%;
       width: 150%;
       margin-top: 20%;
+      font-family: Inter;
+      color: black;
+      line-height: 2rem;
+      margin-left: 20%;
+      margin-bottom: 3%;
     }
   }
 
@@ -121,15 +133,21 @@ import pic4 from "../assets/images/prak4.webp";
     p {
       width: 272px;
       margin-left: 27px;
-      line-height: 150%;
-      font-size: 13px;
+
+      line-height: 1.5rem;
+      font-family: Montserrat;
+      color: black;
+      font-size: 75%;
     }
 
     h2 {
-      margin-left: 8%;
+      margin-left: 9%;
       width: 100%;
       margin-top: 45%;
       font-size: 19px;
+      font-family: Inter;
+      color: black;
+      margin-bottom: 4%;
     }
 
     .pic1 {

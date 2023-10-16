@@ -8,7 +8,7 @@
       <h3>2022 -</h3>
       <p>Multimedie design - København erhvervs akadami - KEA</p>
       <li>Viden for HTML, CSS, Javascript samt Astro</li>
-      <li>Visual Studie Code</li>
+      <li>Visual Studio Code</li>
       <li>Forståelse for Figma samt XD</li>
       <li>Forståelse for Foto og video redigering</li>
 
@@ -76,6 +76,14 @@
 </article>
 
 <style>
+  @font-face {
+    font-family: Inter;
+    src: url("/fonts/Inter-VariableFont_slnt,wght.ttf");
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf");
+  }
   @media (min-width: 800px) {
     article {
       margin-top: 5%;
@@ -90,10 +98,37 @@
     .sec2 {
       margin-left: 20%;
     }
+    h2 {
+      font-family: Inter;
+      font-weight: 900;
+      color: black;
+    }
+    h3 {
+      font-family: Inter;
+      font-weight: 700;
+      color: black;
+      line-height: 2rem;
+    }
+    li {
+      font-family: Montserrat;
+      color: black;
+      font-weight: 300;
+      line-height: 2rem;
+      width: 75%;
+    }
+    p {
+      font-family: Montserrat;
+      color: black;
+      font-weight: 600;
+      line-height: 2rem;
+    }
   }
   @media (max-width: 600px) {
     h2 {
       margin-top: 20%;
+      font-family: Inter;
+      font-weight: 900;
+      color: black;
     }
     .sec1 {
       margin-left: 10%;
@@ -103,12 +138,19 @@
     }
     li {
       line-height: 40px;
+      font-family: Montserrat;
+      color: black;
     }
     h3 {
       line-height: 60px;
+      font-family: Inter;
+      font-weight: 900;
+      color: black;
     }
     p {
-      font-weight: 800;
+      font-weight: 600;
+      font-family: Montserrat;
+      color: black;
     }
   }
 </style>
